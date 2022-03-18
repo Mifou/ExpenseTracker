@@ -1,9 +1,13 @@
 package com.exercises;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        Tracker tracker = new Tracker();
+        List<Expense> expensions =  new ArrayList<>();
+        Tracker tracker = new Tracker(expensions);
 
         Expense expense1 = new Expense("Bread", "Food", 10);
         Expense expense2 = new Expense("Flour", "Food", 4);
